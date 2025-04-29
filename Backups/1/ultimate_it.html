@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ultimate IT Dashboard</title>
+  <link rel="stylesheet" href="ultimate_it.css" />
+</head>
+<body>
+
+<!-- ۩ஜ═══ Top Bar: Clock + Toggle Mode + Title ═══ஜ۩ -->
+<header class="top-bar">
+  <div class="title">
+    <h1>🖥️ Ultimate IT Dashboard</h1>
+    <p id="dateTime">--:--</p>
+  </div>
+  <button id="toggleMode">🌗</button>
+</header>
+
+<!-- ۩ஜ═══ System Stats Section ═══ஜ۩ -->
+<section class="grid">
+  <div class="card" id="cpu">CPU Usage: <span class="value">--%</span></div>
+  <div class="card" id="ram">RAM Usage: <span class="value">--%</span></div>
+  <div class="card" id="disk">Disk Space: <span class="value">--%</span></div>
+  <div class="card" id="ip">IP Address: <span class="value">192.168.0.1</span></div>
+</section>
+
+<!-- ۩ஜ═══ Network Actions ═══ஜ۩ -->
+<section class="grid actions">
+  <button onclick="ping('local')">Ping Local</button>
+  <button onclick="ping('external')">Ping External</button>
+  <button onclick="runSpeedTest()">Run Speed Test</button>
+</section>
+
+<!-- ۩ஜ═══ Input Monitor Section ═══ஜ۩ -->
+<section class="monitor">
+  <h2>Mouse Tracker</h2>
+  <p id="mousePos">X: -- | Y: --</p>
+  <p id="mouseBtn">Last Button: None</p>
+
+  <h2>Keyboard Tracker</h2>
+  <p id="keyPress">Last Key Pressed: None</p>
+</section>
+
+<!-- ۩ஜ═══ Placeholders for Phase 2 ═══ஜ۩ -->
+<section class="future">
+  <h2>Connected Devices (Coming Soon)</h2>
+  <div class="box">Detect devices on LAN network</div>
+
+  <h2>Bandwidth Monitor (Coming Soon)</h2>
+  <div class="box">Live upload/download graph</div>
+</section>
+
+<script src="ultimate_it.js"></script>
+</body>
+</html>
