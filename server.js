@@ -56,6 +56,9 @@ app.get('/api/stats', async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/ultimate_it.html");
+});
 
 app.listen(PORT, () => {
   console.log(`✅ Ultimate IT API running at http://localhost:${PORT}`);
