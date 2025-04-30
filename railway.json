@@ -1,0 +1,16 @@
+{
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "services": [
+    {
+      "name": "web",
+      "startCommand": "node server.js",
+      "env": {
+        "PORT": "3000"
+      }
+    }
+  ]
+}
